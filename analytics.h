@@ -6,7 +6,7 @@
 
 class Analytics {
 public:
-    Analytics() = default; // Конструктор по умолчанию
+    Analytics() = default;
     Analytics(const QString& text, const QMap<QString, int>& frequency);
     int totalWords() const;
     int uniqueWords() const;

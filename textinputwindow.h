@@ -38,7 +38,6 @@ private:
     Ui::TextInputWindow *ui;
     QThread *workerThread;
     AnalysisWorker *worker;
-    ResultCache cache;
     QGraphicsScene *scene;
     WordGraph *wordGraph;
     QMap<QString, int> frequency;

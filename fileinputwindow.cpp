@@ -55,7 +55,7 @@ void FileInputWindow::selectAndAnalyze() {
     QString cacheKey = QString::number(qHash(filePath));
     QMap<QString, int> frequency;
     Analytics analytics("", {});
-    if (cache.retrieve(cacheKey, frequency, analytics)) {
+    if (ResultCache::instance().retrieve(cacheKey, frequency, analytics)) {
         handleAnalysisResult(frequency, analytics);
         return;
     }
@@ -85,7 +85,7 @@ void FileInputWindow::handleAnalysisResult(const QMap<QString, int>& freq, const
     wordGraph->drawLineGraph(frequency, scene);
 
     QString cacheKey = QString::number(qHash(filePath));
-    cache.store(cacheKey, frequency, analytics);
+    ResultCache::instance().store(cacheKey, frequency, analytics);
 }
 
 void FileInputWindow::handleError(const QString& error) {
@@ -123,7 +123,7 @@ void FileInputWindow::exportResults() {
 }
 
 void FileInputWindow::clearCache() {
-    cache.clear();
+    ResultCache::instance().clear();
     ui->resultTextEdit->clear();
     scene->clear();
     showError("Cache cleared.");

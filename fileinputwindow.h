@@ -38,7 +38,6 @@ private:
     Ui::FileInputWindow *ui;
     QThread *workerThread;
     AnalysisWorker *worker;
-    ResultCache cache;
     QString filePath;
     QGraphicsScene *scene;
     WordGraph *wordGraph;

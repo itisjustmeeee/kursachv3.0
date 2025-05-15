@@ -1,7 +1,5 @@
 #include "resultcache.h"
 
-ResultCache::ResultCache() {}
-
 void ResultCache::store(const QString& key, const QMap<QString, int>& frequency, const Analytics& analytics) {
     cache.insert(key, QPair<QMap<QString, int>, Analytics>(frequency, analytics));
 }
