@@ -34,5 +34,7 @@ A Qt-based app
 `cd build`
 3. Configure the project with CMake:
 `cmake ..`
+if Could not find a package configuration file provided by "Qt6", add path to lib\cmake\Qt6:
+`cmake .. -DCMAKE_PREFIX_PATH=C:\Qt\6.9.0\msvc2019_64\lib\cmake` (example)
 4. Build the project:
 `cmake --build .`
