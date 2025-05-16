@@ -2,22 +2,35 @@
 
 A Qt-based app
 
-##Features
+## Features
 - Text input and file-based word frequency analysis
 - Line graph visualization (top 10 words with the most frequency)
 - Interactive graph (scroll, zoom)
-- Export results to '.txt' with Git commits
+- Save analysis results to .txt or .csv formats, including comprehensive statistics
 - Dark theme via 'MaterialDark.qss'
 - Multithreaded analysis
+- Caching: Stores analysis results to speed up repeated operations with the same input
 
 ## Requirements
-- Qt 6.9.0
-- CMake 3.16+
-- MSVC 2022
+- Qt: Version 6.9.0
+- CMake: Version 3.16 or higher
+- Compiler: MSVC 2022 (Windows) or GCC/Clang (Linux/macOS)
 - Git
 
-## Build Instructions
-`` `mkdir build` ``
-cd build
-cmake ..
-cmake --build .
+## Cloning the Repository
+1. Open a terminal.
+2. Navigate to your projects directory:
+`cd ~/Projects  # Linux/macOS`
+`cd C:\Projects  # Windows`
+3. Clone the repository:
+`git clone https://github.com/itisjustmeeee/kursachv3.0.git`
+4. Enter the project directory
+
+## Building the Project
+1. Create a build directory:
+`mkdir build`
+2. Navigate to the build directory
+3. Configure the project with CMake:
+`cmake ..`
+4. Build the project:
+`cmake --build .`
