@@ -17,7 +17,9 @@ A Qt-based app
 - Git
 
 ## Build Instructions
-```mkdir build
+bash
+```mkdir build```
 cd build
 cmake ..
 cmake --build .
+lol
