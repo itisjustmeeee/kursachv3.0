@@ -24,12 +24,14 @@ A Qt-based app
 `cd C:\Projects  # Windows`
 3. Clone the repository:
 `git clone https://github.com/itisjustmeeee/kursachv3.0.git`
-4. Enter the project directory
+4. Enter the project directory:
+`cd kursachv3.0`
 
 ## Building the Project
 1. Create a build directory:
 `mkdir build`
-2. Navigate to the build directory
+2. Navigate to the build directory:
+`cd build`
 3. Configure the project with CMake:
 `cmake ..`
 4. Build the project:
