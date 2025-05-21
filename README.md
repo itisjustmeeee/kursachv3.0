@@ -39,7 +39,7 @@ if Could not find a package configuration file provided by "Qt6", add path to li
 4. Build the project:
 `cmake --build .`
 5. Upload all necessary files to the folder with the .exe file:
-`"C:\Qt\6.9.0\msvc2022_64\bin\windeployqt.exe" "c:\Users\user\projects\kursachv3.0\build\Debug\kursach_2.exe"` (example)
+`"C:\Qt\6.9.0\msvc2022_64\bin\windeployqt.exe" "C:\Users\user\projects\kursachv3.0\build\Debug\kursach_2.exe"` (example)
 
 ## Verify the build and Run project
 1. Open a terminal.
